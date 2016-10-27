@@ -1,0 +1,35 @@
+{
+  "name": "react-fullcalendar",
+  "version": "0.0.0",
+  "description": "react version of the fullcalendar jQuery plugin",
+  "main": "src/index.js",
+  "devDependencies": {
+    "budo": "^9.2.1",
+    "jquery": "^3.1.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "peerDependencies": {
+    "jquery": ">=2.0.0",
+    "react": ">=0.14.0",
+    "react-dom": ">=0.14.0"
+  },
+  "scripts": {
+    "start": "npm run experiment",
+    "preexperiment": "cp node_modules/fullcalendar/dist/fullcalendar.min.css experiment",
+    "experiment": "budo experiment/index.js --dir experiment --serve bundle.js --live --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hp-mobile/react-fullcalendar.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hp-mobile/react-fullcalendar/issues"
+  },
+  "homepage": "https://github.com/hp-mobile/react-fullcalendar#readme",
+  "dependencies": {
+    "fullcalendar": "^3.0.1"
+  }
+}
