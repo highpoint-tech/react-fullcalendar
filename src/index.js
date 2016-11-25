@@ -12,7 +12,8 @@ const ReactFullCalendar = createClass({
   render() {
     return (
       t('div', {
-        ref: root => (this.$calendar = $(root))
+        ref: root => (this.$calendar = $(root)),
+        className: this.props.className
       })
     );
   }
