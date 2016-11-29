@@ -3,17 +3,26 @@ const { createElement: t, createClass } = require('react');
 require('fullcalendar');
 
 const ReactFullCalendar = createClass({
-  componentDidMount() {
+  init() {
     this.$calendar.fullCalendar(this.props);
   },
-  componentWillUnmount() {
+  destroy() {
     this.$calendar.fullCalendar('destroy');
+  },
+  componentDidMount() {
+    this.init();
+  },
+  componentDidUpdate() {
+    this.destroy();
+    this.init();
+  },
+  componentWillUnmount() {
+    this.destroy();
   },
   render() {
     return (
       t('div', {
-        ref: root => (this.$calendar = $(root)),
-        className: this.props.className
+        ref: root => (this.$calendar = $(root))
       })
     );
   }
