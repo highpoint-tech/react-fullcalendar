@@ -13,8 +13,8 @@ const ReactFullCalendar = createClass({
     this.init();
   },
   componentDidUpdate() {
-    this.$calendar.fullCalendar('removeEvents');
-    this.$calendar.fullCalendar('addEventSource', this.props.events);
+    this.destroy();
+    this.init();
   },
   componentWillUnmount() {
     this.destroy();
