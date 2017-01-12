@@ -1,0 +1,6 @@
+{
+  "extends": "mciparelli",
+  "env": {
+    "browser": true
+  }
+}

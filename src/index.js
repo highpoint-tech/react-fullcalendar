@@ -1,6 +1,6 @@
-const $ = require('jquery');
-const { createElement: t, createClass } = require('react');
-require('fullcalendar');
+import $ from 'jquery';
+import { createElement as t, createClass } from 'react';
+import 'fullcalendar';
 
 const ReactFullCalendar = createClass({
   init() {
@@ -28,4 +28,4 @@ const ReactFullCalendar = createClass({
   }
 });
 
-module.exports = ReactFullCalendar;
+export default ReactFullCalendar;
