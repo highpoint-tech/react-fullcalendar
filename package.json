@@ -1,12 +1,24 @@
 {
-  "name": "react-fullcalendar",
-  "version": "0.0.0",
-  "description": "react version of the fullcalendar jQuery plugin",
+  "name": "@highpoint/react-fullcalendar",
+  "version": "0.1.0",
+  "description": "React version of the fullcalendar jQuery plugin",
+  "license": "MIT",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hp-mobile/react-fullcalendar.git"
+  },
+  "homepage": "https://github.com/hp-mobile/react-fullcalendar#readme",
+  "bugs": {
+    "url": "https://github.com/hp-mobile/react-fullcalendar/issues"
+  },
+  "dependencies": {
+    "fullcalendar": "^3.0.1"
+  },
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-plugin-transform-object-rest-spread": "^6.16.0",
-    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-env": "^1.6.1",
     "babelify": "^7.3.0",
     "budo": "^9.2.1",
     "eslint-config-mciparelli": "^0.8.0",
@@ -27,17 +39,5 @@
     "preexperiment": "cp node_modules/fullcalendar/dist/fullcalendar.min.css experiment",
     "experiment": "budo experiment/index.js --dir experiment --serve bundle.js --live --open",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hp-mobile/react-fullcalendar.git"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hp-mobile/react-fullcalendar/issues"
-  },
-  "homepage": "https://github.com/hp-mobile/react-fullcalendar#readme",
-  "dependencies": {
-    "fullcalendar": "^3.0.1"
   }
 }

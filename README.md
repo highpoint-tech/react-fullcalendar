@@ -7,7 +7,7 @@ You'll need them in your project for this component to work properly and look pr
 
 ## installation
 
-`npm i react-fullcalendar@hp-mobile/react-fullcalendar`  
+`npm i @highpoint/react-fullcalendar`  
 
 
 ## usage
