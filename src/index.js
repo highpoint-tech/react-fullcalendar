@@ -1,6 +1,6 @@
+import 'fullcalendar';
 import $ from 'jquery';
 import { createElement as t, Component } from 'react';
-import 'fullcalendar';
 
 class ReactFullCalendar extends Component {
   init() {
@@ -20,11 +20,11 @@ class ReactFullCalendar extends Component {
     this.destroy();
   }
   render() {
-    return (
-      t('div', {
-        ref: root => (this.$calendar = $(root))
-      })
-    );
+    return t('div', {
+      ref: root => {
+        this.$calendar = $(root);
+      }
+    });
   }
 }
 

@@ -1,7 +1,5 @@
-const Calendar = require('..');
-const { createElement: t } = require('react');
-const { render } = require('react-dom');
+import { createElement as t } from 'react';
+import { render } from 'react-dom';
+import Calendar from '../dist';
 
-const el = t(Calendar);
-
-render(el, document.querySelector('.app-container'));
+render(t(Calendar), document.querySelector('.app-container'));
