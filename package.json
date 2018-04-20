@@ -13,6 +13,7 @@
     "url": "https://github.com/hp-mobile/react-fullcalendar/issues"
   },
   "dependencies": {
+    "babel-eslint": "^8.2.3",
     "fullcalendar": "^3.0.1"
   },
   "devDependencies": {
@@ -21,9 +22,15 @@
     "babel-preset-env": "^1.6.1",
     "babelify": "^7.3.0",
     "budo": "^9.2.1",
-    "eslint-config-mciparelli": "^0.8.0",
+    "copyfiles": "^2.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-mciparelli": "^0.10.0",
+    "eslint-config-prettier": "^2.9.0",
+    "husky": "^0.14.3",
     "jquery": "^3.1.1",
+    "lint-staged": "^7.0.4",
     "mkdirp": "^0.5.1",
+    "prettier": "^1.12.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   },
@@ -35,9 +42,15 @@
   "scripts": {
     "prebuild": "mkdirp dist",
     "build": "babel src/index.js --out-file dist/index.js",
+    "experiment":
+      "budo experiment/index.js --dir experiment --serve bundle.js --live --open",
+    "preexperiment":
+      "copyfiles node_modules/fullcalendar/dist/fullcalendar.min.css experiment --flat",
+    "precommit": "lint-staged",
     "start": "npm run experiment",
-    "preexperiment": "cp node_modules/fullcalendar/dist/fullcalendar.min.css experiment",
-    "experiment": "budo experiment/index.js --dir experiment --serve bundle.js --live --open",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "browserify": {
+    "transform": ["babelify"]
   }
 }

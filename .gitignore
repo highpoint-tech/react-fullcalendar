@@ -1,6 +1,5 @@
 *.iml
 *.log
-experiment/fullcalendar.min.css
 
 .idea
 node_modules
