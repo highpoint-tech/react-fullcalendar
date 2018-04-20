@@ -1,6 +1,6 @@
 {
   "name": "@highpoint/react-fullcalendar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "React version of the fullcalendar jQuery plugin",
   "license": "MIT",
   "main": "dist/index.js",
@@ -13,11 +13,11 @@
     "url": "https://github.com/hp-mobile/react-fullcalendar/issues"
   },
   "dependencies": {
-    "babel-eslint": "^8.2.3",
     "fullcalendar": "^3.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
+    "babel-eslint": "^8.2.3",
     "babel-plugin-transform-object-rest-spread": "^6.16.0",
     "babel-preset-env": "^1.6.1",
     "babelify": "^7.3.0",
