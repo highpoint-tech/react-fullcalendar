@@ -47,6 +47,7 @@
     "preexperiment":
       "copyfiles node_modules/fullcalendar/dist/fullcalendar.min.css experiment --flat",
     "precommit": "lint-staged",
+    "prepublishOnly": "npm run build",
     "start": "npm run experiment",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
