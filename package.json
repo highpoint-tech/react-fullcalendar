@@ -1,6 +1,6 @@
 {
   "name": "@highpoint/react-fullcalendar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React version of the fullcalendar jQuery plugin",
   "license": "MIT",
   "main": "dist/index.js",
